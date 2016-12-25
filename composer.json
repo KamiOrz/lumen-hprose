@@ -1,0 +1,34 @@
+{
+    "name": "kamiorz/lumen-hprose",
+    "description": "Hprose client/server providers for lumen 5.x",
+    "keywords": ["Hprose", "Lumen", "Rpc", "JsonRpc", "XmlRpc"],
+    "version":"1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "XiaoGai",
+            "email": "68152283@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": ">=5.0",
+        "hprose/hprose": "^2.0",
+        "laravel/lumen-framework":">=5.2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+        "laravel/lumen": "5.2.*",
+    },
+    "autoload": {
+        "psr-4": {
+            "KamiOrz\\LumenHprose\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "prefer-stable": true
+}
